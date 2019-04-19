@@ -77,12 +77,37 @@ func StringToPrimitive(str string, value interface{}) (error, bool) {
 	return nil, true
 }
 
-// 驼峰转下划线
-func CamelToUnderline(camel string) string {
-	data := make([]byte, 0, len(camel)*2)
-	size := len(camel)
+// 下划线转驼峰
+func UnderlineToCamel(str string) string {
+	data := make([]byte, 0, len(str))
+	size := len(str)
 	for i := 0; i < size; i++ {
-		d := camel[i]
+		d := str[i]
+		if i == 0 && d >= 'a' && d <= 'z' {
+			d = d - 32
+		}
+
+		if d == '_' && i+1 < size {
+			i = i + 1
+			d = str[i]
+			if d >= 'a' && d <= 'z' {
+				d = str[i] - 32
+			}
+		}
+
+		if d != '_' {
+			data = append(data, d)
+		}
+	}
+	return string(data[:])
+}
+
+// 驼峰转下划线
+func CamelToUnderline(str string) string {
+	data := make([]byte, 0, len(str)*2)
+	size := len(str)
+	for i := 0; i < size; i++ {
+		d := str[i]
 		if i > 0 && d >= 'A' && d <= 'Z' {
 			data = append(data, '_')
 		}

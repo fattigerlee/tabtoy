@@ -25,7 +25,7 @@ var (
 
 {{range $sn, $objName := $.Types.StructNames}}
 type {{$objName}} struct{ {{range $fi,$field := $.Types.AllFieldByName $objName}}
-	{{$field.FieldName}} {{GoType $field}} {{GoTabTag $field}} {{end}}
+	{{FieldName $field}} {{GoType $field}} {{GoTabTag $field}} {{end}}
 }
 {{end}}
 

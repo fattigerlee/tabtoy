@@ -47,8 +47,12 @@ func init() {
 		return sb.String()
 	}
 
+	UsefulFunc["FieldName"] = func(fieldType *model.TypeDefine) string {
+		return util.UnderlineToCamel(fieldType.FieldName)
+	}
+
 	UsefulFunc["JsonTab"] = func(tabType *model.DataTable) string {
-		return fmt.Sprintf("`json:\"%s\"`", util.CamelToUnderline(tabType.HeaderType))
+		return fmt.Sprintf("`json:\"%s\"`", tabType.HeaderType)
 	}
 
 	UsefulFunc["JsonTabOmit"] = func() string {
