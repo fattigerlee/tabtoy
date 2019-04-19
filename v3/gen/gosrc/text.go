@@ -31,7 +31,7 @@ type {{$objName}} struct{ {{range $fi,$field := $.Types.AllFieldByName $objName}
 
 // Combine struct
 type {{.CombineStructName}} struct { {{range $ti, $tab := $.Datas.AllTables}}
-	{{$tab.HeaderType}} []*{{$tab.HeaderType}} // table: {{$tab.HeaderType}} {{end}}
+	{{$tab.HeaderType}} []*{{$tab.HeaderType}} {{JsonTab $tab}} // table: {{$tab.HeaderType}} {{end}}
 
 	// Indices {{range $ii, $idx := GetIndices $}}
 	{{$idx.Table.HeaderType}}By{{$idx.FieldInfo.FieldName}} map[{{GoType $idx.FieldInfo}}]*{{$idx.Table.HeaderType}}	{{JsonTabOmit}} // table: {{$idx.Table.HeaderType}} {{end}}

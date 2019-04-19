@@ -2,8 +2,8 @@ package v2tov3
 
 import (
 	"github.com/davyxu/golexer"
-	"github.com/davyxu/tabtoy/v2tov3/model"
-	"github.com/davyxu/tabtoy/v3/helper"
+	"github.com/fattigerlee/tabtoy/v2tov3/model"
+	"github.com/fattigerlee/tabtoy/v3/helper"
 	"github.com/tealeg/xlsx"
 	"path/filepath"
 	"strings"

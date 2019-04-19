@@ -86,4 +86,8 @@ func init() {
 		}
 	}
 
+	UsefulFunc["HeaderType"] = func(tabType *model.DataTable) string {
+		return util.CamelToUnderline(tabType.HeaderType)
+	}
+
 }

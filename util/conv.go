@@ -1,6 +1,9 @@
 package util
 
-import "strconv"
+import (
+	"strconv"
+	"strings"
+)
 
 func StringToPrimitive(str string, value interface{}) (error, bool) {
 	switch raw := value.(type) {
@@ -72,4 +75,18 @@ func StringToPrimitive(str string, value interface{}) (error, bool) {
 	}
 
 	return nil, true
+}
+
+// 驼峰转下划线
+func CamelToUnderline(camel string) string {
+	data := make([]byte, 0, len(camel)*2)
+	size := len(camel)
+	for i := 0; i < size; i++ {
+		d := camel[i]
+		if i > 0 && d >= 'A' && d <= 'Z' {
+			data = append(data, '_')
+		}
+		data = append(data, d)
+	}
+	return strings.ToLower(string(data[:]))
 }

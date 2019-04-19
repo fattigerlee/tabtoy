@@ -2,16 +2,16 @@ package main
 
 import (
 	"flag"
-	"github.com/davyxu/tabtoy/v3/compiler"
-	"github.com/davyxu/tabtoy/v3/gen"
-	"github.com/davyxu/tabtoy/v3/gen/binpak"
-	"github.com/davyxu/tabtoy/v3/gen/cssrc"
-	"github.com/davyxu/tabtoy/v3/gen/gosrc"
-	"github.com/davyxu/tabtoy/v3/gen/jsontext"
-	"github.com/davyxu/tabtoy/v3/gen/luasrc"
-	"github.com/davyxu/tabtoy/v3/helper"
-	"github.com/davyxu/tabtoy/v3/model"
-	"github.com/davyxu/tabtoy/v3/report"
+	"github.com/fattigerlee/tabtoy/v3/compiler"
+	"github.com/fattigerlee/tabtoy/v3/gen"
+	"github.com/fattigerlee/tabtoy/v3/gen/binpak"
+	"github.com/fattigerlee/tabtoy/v3/gen/cssrc"
+	"github.com/fattigerlee/tabtoy/v3/gen/gosrc"
+	"github.com/fattigerlee/tabtoy/v3/gen/jsontext"
+	"github.com/fattigerlee/tabtoy/v3/gen/luasrc"
+	"github.com/fattigerlee/tabtoy/v3/helper"
+	"github.com/fattigerlee/tabtoy/v3/model"
+	"github.com/fattigerlee/tabtoy/v3/report"
 	"os"
 )
 

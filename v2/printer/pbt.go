@@ -1,9 +1,9 @@
 package printer
 
 import (
-	"github.com/davyxu/tabtoy/v2/i18n"
-	"github.com/davyxu/tabtoy/v2/model"
-	"github.com/davyxu/tabtoy/util"
+	"github.com/fattigerlee/tabtoy/util"
+	"github.com/fattigerlee/tabtoy/v2/i18n"
+	"github.com/fattigerlee/tabtoy/v2/model"
 )
 
 func valueWrapperPbt(t model.FieldType, node *model.Node) string {

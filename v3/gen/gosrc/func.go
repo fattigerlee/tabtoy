@@ -2,6 +2,7 @@ package gosrc
 
 import (
 	"fmt"
+	"github.com/fattigerlee/tabtoy/util"
 	"github.com/fattigerlee/tabtoy/v3/model"
 	"strings"
 	"text/template"
@@ -30,7 +31,7 @@ func init() {
 		var kv []string
 
 		if fieldType.Name != "" {
-			kv = append(kv, fmt.Sprintf("tb_name:\"%s\"", fieldType.Name))
+			kv = append(kv, fmt.Sprintf("json:\"%s\",tb_name:\"%s\"", fieldType.FieldName, fieldType.Name))
 		}
 
 		if len(kv) > 0 {
@@ -44,6 +45,10 @@ func init() {
 		}
 
 		return sb.String()
+	}
+
+	UsefulFunc["JsonTab"] = func(tabType *model.DataTable) string {
+		return fmt.Sprintf("`json:\"%s\"`", util.CamelToUnderline(tabType.HeaderType))
 	}
 
 	UsefulFunc["JsonTabOmit"] = func() string {
