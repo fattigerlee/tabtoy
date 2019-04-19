@@ -106,12 +106,34 @@ func UnderlineToCamel(str string) string {
 func CamelToUnderline(str string) string {
 	data := make([]byte, 0, len(str)*2)
 	size := len(str)
+
+	// 全大写,直接转小写
+	upper := true
 	for i := 0; i < size; i++ {
-		d := str[i]
-		if i > 0 && d >= 'A' && d <= 'Z' {
-			data = append(data, '_')
+		if str[i] < 'A' || str[i] > 'Z' {
+			upper = false
+			break
 		}
-		data = append(data, d)
 	}
+
+	if upper {
+		return strings.ToLower(str)
+	}
+
+	for i := 0; i < size-1; i++ {
+		if str[i] >= 'A' && str[i] <= 'Z' &&
+			str[i+1] >= 'A' && str[i+1] <= 'Z' {
+			data = append(data, str[i])
+			continue
+		}
+
+		if i > 0 && str[i] >= 'A' && str[i] <= 'Z' {
+			data = append(data, '_', str[i])
+			continue
+		}
+		data = append(data, str[i])
+	}
+	data = append(data, str[size-1])
+
 	return strings.ToLower(string(data[:]))
 }

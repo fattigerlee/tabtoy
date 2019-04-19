@@ -31,7 +31,7 @@ func init() {
 		var kv []string
 
 		if fieldType.Name != "" {
-			kv = append(kv, fmt.Sprintf("json:\"%s\",tb_name:\"%s\"", fieldType.FieldName, fieldType.Name))
+			kv = append(kv, fmt.Sprintf("json:\"%s\",tb_name:\"%s\"", util.CamelToUnderline(fieldType.FieldName), fieldType.Name))
 		}
 
 		if len(kv) > 0 {
@@ -47,12 +47,8 @@ func init() {
 		return sb.String()
 	}
 
-	UsefulFunc["FieldName"] = func(fieldType *model.TypeDefine) string {
-		return util.UnderlineToCamel(fieldType.FieldName)
-	}
-
 	UsefulFunc["JsonTab"] = func(tabType *model.DataTable) string {
-		return fmt.Sprintf("`json:\"%s\"`", tabType.HeaderType)
+		return fmt.Sprintf("`json:\"%s\"`", util.CamelToUnderline(tabType.HeaderType))
 	}
 
 	UsefulFunc["JsonTabOmit"] = func() string {
