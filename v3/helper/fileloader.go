@@ -2,7 +2,7 @@ package helper
 
 import (
 	"errors"
-	"github.com/davyxu/tabtoy/v3/report"
+	"github.com/fattigerlee/tabtoy/v3/report"
 	"github.com/tealeg/xlsx"
 	"path/filepath"
 	"sync"

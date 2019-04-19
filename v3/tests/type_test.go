@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"github.com/davyxu/tabtoy/v3/helper"
+	"github.com/fattigerlee/tabtoy/v3/helper"
 	"testing"
 )
 

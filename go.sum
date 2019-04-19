@@ -1,0 +1,16 @@
+github.com/ahmetb/go-linq v3.0.0+incompatible h1:qQkjjOXKrKOTy83X8OpRmnKflXKQIL/mC/gMVVDMhOA=
+github.com/ahmetb/go-linq v3.0.0+incompatible/go.mod h1:PFffvbdbtw+QTB0WKRP0cNht7vnCfnGlEpak/DVg5cY=
+github.com/davyxu/golexer v0.0.0-20180314091252-f048a86ae200 h1:qLWlQBFg5c7HUOK+UdoGouLzRaYBQr2WwoAqixU+eik=
+github.com/davyxu/golexer v0.0.0-20180314091252-f048a86ae200/go.mod h1:K/1PVWqaQEwMs+N+VvaoS66o1BAAwso+jEgXKBIa8QY=
+github.com/davyxu/golog v0.0.0-20190227055902-72e4f3de2d15 h1:9mMn/WaMMyhhSXdrNNUvAr10/TRhvgybxZOk7p3MByg=
+github.com/davyxu/golog v0.0.0-20190227055902-72e4f3de2d15/go.mod h1:YwChkFY5dCYt77yuPlWjcR6KlWqVJNbz3WkwC/8WgQk=
+github.com/davyxu/protoplus v0.0.0-20190409031624-3389bf2a035b h1:wSETxwCVKj0f25aQTDZUJ0xxvakIXI3cb+K0zqeMwTk=
+github.com/davyxu/protoplus v0.0.0-20190409031624-3389bf2a035b/go.mod h1:WzmNYPvYsyks3G81jCJ/vGY2ljs49qFMfCmXGwvxFLA=
+github.com/davyxu/tabtoy v0.0.0-20190328142555-ae7dc2492527 h1:5dxqqTpYyI4I0gJUk/IyEg9wcxDHSakRwkJcY45Fhk8=
+github.com/davyxu/tabtoy v0.0.0-20190328142555-ae7dc2492527/go.mod h1:XdHiHFm2lb1E2MZ1HEKwqz4Q+FMoa5ptOE6r+hfvRnE=
+github.com/golang/text v0.3.0 h1:uI5zIUA9cg047ctlTptnVc0Ghjfurf2eZMFrod8R7v8=
+github.com/golang/text v0.3.0/go.mod h1:GUiq9pdJKRKKAZXiVgWFEvocYuREvC14NhI4OPgEjeE=
+github.com/tealeg/xlsx v1.0.3 h1:BXsDIQYBPq2HgbwUxrsVXIrnO0BDxmsdUfHSfvwfBuQ=
+github.com/tealeg/xlsx v1.0.3/go.mod h1:uxu5UY2ovkuRPWKQ8Q7JG0JbSivrISjdPzZQKeo74mA=
+github.com/tealeg/xlsx v1.0.4-0.20190403190220-b7005b5d48cb h1:H+bcPX8JwubhtkOIkI4Ij2ECR5ic03gT2UfJmRsgiAs=
+github.com/tealeg/xlsx v1.0.4-0.20190403190220-b7005b5d48cb/go.mod h1:uxu5UY2ovkuRPWKQ8Q7JG0JbSivrISjdPzZQKeo74mA=

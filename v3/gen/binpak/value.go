@@ -1,7 +1,7 @@
 package binpak
 
 import (
-	"github.com/davyxu/tabtoy/v3/model"
+	"github.com/fattigerlee/tabtoy/v3/model"
 	"strconv"
 )
 
