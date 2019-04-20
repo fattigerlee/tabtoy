@@ -90,4 +90,7 @@ func init() {
 		return util.CamelToUnderline(tabType.HeaderType)
 	}
 
+	UsefulFunc["FieldName"] = func(header *model.TypeDefine) string {
+		return util.CamelToUnderline(header.FieldName)
+	}
 }
