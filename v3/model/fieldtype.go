@@ -18,7 +18,7 @@ var (
 		{"int16", "int16", "Int16", "0"},
 		{"int32", "int32", "Int32", "0"},
 		{"int64", "int64", "Int64", "0"},
-		{"int", "int32", "Int32", "0"},
+		{"int", "int", "Int32", "0"},
 		{"uint16", "uint16", "UInt16", "0"},
 		{"uint32", "uint32", "UInt32", "0"},
 		{"uint64", "uint64", "UInt64", "0"},
