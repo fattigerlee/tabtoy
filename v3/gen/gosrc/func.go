@@ -18,7 +18,13 @@ func init() {
 		convertedType := model.LanguagePrimitive(tf.FieldType, "go")
 
 		if tf.IsArray() {
-			return "[]" + convertedType
+			// 原始类型
+			if model.PrimitiveExists(convertedType) {
+				return "[]" + convertedType
+			}
+
+			// 自建类型
+			return "[]*" + convertedType
 		}
 
 		return convertedType
