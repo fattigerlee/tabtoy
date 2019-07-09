@@ -38,6 +38,11 @@ func wrapSingleValue(globals *model.Globals, valueType *model.TypeDefine, value 
 }
 
 func WrapValue(globals *model.Globals, value string, valueType *model.TypeDefine) string {
+	// 使用默认值
+	if value == "" && valueType.Value != "" {
+		return wrapSingleValue(globals, valueType, valueType.Value)
+	}
+
 	if valueType.IsArray() {
 
 		var sb strings.Builder
